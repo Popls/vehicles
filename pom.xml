@@ -122,7 +122,7 @@
 							<language>spring</language>
 							<output>./</output>
 							<modelPackage>${groupId}.${artifactId}.infrastructure.rest.spring.swagger.dto</modelPackage>
-							<apiPackage>${groupId}.${artifactId}.infrastructure.rest.spring.swagger.api</apiPackage>
+							<apiPackage>${groupId}.${artifactId}.infrastructure.rest.spring.swagger.api.spec</apiPackage>
 							<modelNameSuffix>Dto</modelNameSuffix>
 							<generateApiDocumentation>false</generateApiDocumentation>
 							<generateModelDocumentation>false</generateModelDocumentation>
