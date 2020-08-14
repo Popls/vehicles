@@ -1,4 +1,4 @@
-package com.microservice.entity.domain;
+package com.microservice.entities.domain;
 
 import java.io.Serializable;
 import java.util.UUID;

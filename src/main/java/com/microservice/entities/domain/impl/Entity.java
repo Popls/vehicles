@@ -1,8 +1,8 @@
-package com.microservice.entity.domain.impl;
+package com.microservice.entities.domain.impl;
 
 import java.util.UUID;
 
-import com.microservice.entity.domain.IEntityDomain;
+import com.microservice.entities.domain.IEntityDomain;
 
 import lombok.Builder;
 import lombok.Getter;

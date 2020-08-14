@@ -3,7 +3,7 @@ info:
   title: Entities API
   description: API to control the entities data.
   version: 1.0.0
-host: api.entities.com
+host: "localhost"
 schemes:
   - https
 paths:
@@ -22,7 +22,7 @@ paths:
       responses:
         200:
           schema:
-            $ref: '#/definitions/Entity'
+            $ref: '#/definitions/EntityResponse'
           description: OK
         204:
           description: NOT FOUND
@@ -42,7 +42,7 @@ paths:
           description: Modification content
           required: true
           schema:
-            $ref: '#/definitions/Entity'
+            $ref: '#/definitions/EntityRequest'
       responses:
         200:
           description: OK
@@ -72,30 +72,30 @@ paths:
       produces:
         - application/json
       parameters:
-        - name: id
-          in: path
-          description: Entity ID
-          required: true
-          type: string
         - name: body
           in: body
           description: Modification content
           required: true
           schema:
-            $ref: '#/definitions/Entity'
+            $ref: '#/definitions/EntityRequest'
       responses:
         201:
+          schema:
+            $ref: '#/definitions/EntityResponse'
           description: CREATED
 
 definitions:
-  Entity:
+  EntityRequest:
+    type: object
+    properties:
+      name:
+        type: string
+
+  EntityResponse:
     type: object
     properties:
       id:
         type: string
-        readOnly: true
       name:
         type: string
-    required:
-      - id
 

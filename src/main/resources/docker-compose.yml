@@ -3,7 +3,7 @@ services:
   postgresql:
     image: postgres:9
     environment:
-      POSTGRES_DB: planets
+      POSTGRES_DB: entities
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mysecretpassword
     restart: always
