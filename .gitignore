@@ -29,5 +29,5 @@ build/
 
 ### VS Code ###
 .vscode/
-/src/main/java/com/universe/planets/infrastructure/rest/spring/swagger/dto/
-/src/main/java/com/universe/planets/infrastructure/rest/spring/swagger/api/spec/
+/src/main/java/com/microservice/entities/infrastructure/rest/spring/swagger/dto/
+/src/main/java/com/microservice/entities/infrastructure/rest/spring/swagger/api/spec/
