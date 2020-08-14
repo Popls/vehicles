@@ -1,0 +1,101 @@
+swagger: "2.0"
+info:
+  title: Entities API
+  description: API to control the entities data.
+  version: 1.0.0
+host: api.entities.com
+schemes:
+  - https
+paths:
+  /entity/{id}:
+    get:
+      summary: Returns an entity information.
+      description: This return the entity.
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: Entity ID
+          required: true
+          type: string
+      responses:
+        200:
+          schema:
+            $ref: '#/definitions/Entity'
+          description: OK
+        204:
+          description: NOT FOUND
+    put:
+      summary: Modify the entity.
+      description: Only return is successful or not.
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: Entity ID
+          required: true
+          type: string
+        - name: body
+          in: body
+          description: Modification content
+          required: true
+          schema:
+            $ref: '#/definitions/Entity'
+      responses:
+        200:
+          description: OK
+        204:
+          description: NOT FOUND
+    delete:
+      summary: Delete an entity.
+      description: Only return is successful or not.
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: Entity ID
+          required: true
+          type: string
+      responses:
+        200:
+          description: OK
+        204:
+          description: NOT FOUND
+
+  /entity:
+    post:
+      summary: Create a entity.
+      description: Only return is successful or not.
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: Entity ID
+          required: true
+          type: string
+        - name: body
+          in: body
+          description: Modification content
+          required: true
+          schema:
+            $ref: '#/definitions/Entity'
+      responses:
+        201:
+          description: CREATED
+
+definitions:
+  Entity:
+    type: object
+    properties:
+      id:
+        type: string
+        readOnly: true
+      name:
+        type: string
+    required:
+      - id
+
