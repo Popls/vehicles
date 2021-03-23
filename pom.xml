@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.microservice</groupId>
-	<artifactId>entities</artifactId>
+	<artifactId>vehicles</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>entities</name>
-	<description>Microservice which emulate entities</description>
+	<name>vehicles</name>
+	<description>Microservice which emulate vehicles</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -99,7 +99,12 @@
 			<artifactId>mapstruct</artifactId>
 			<version>${mapstruct.version}</version>
 		</dependency>
-	</dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
 	<build>
 		<plugins>
@@ -118,7 +123,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<inputSpec>src/main/resources/entitiesApi.yaml</inputSpec>
+							<inputSpec>src/main/resources/vehiclesApi.yaml</inputSpec>
 							<language>spring</language>
 							<output>./</output>
 							<modelPackage>${groupId}.${artifactId}.infrastructure.rest.spring.swagger.dto</modelPackage>

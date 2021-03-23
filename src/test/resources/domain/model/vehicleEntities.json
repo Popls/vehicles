@@ -1,0 +1,32 @@
+[
+  {
+    "id": "PT-LIS-A00428",
+    "name": "01ZB86",
+    "x": -9.140723,
+    "y": 38.726559,
+    "licencePlate": "01ZB86",
+    "range": 62,
+    "batteryLevel": 82,
+    "helmets": 2,
+    "model": "Askoll",
+    "resourceImageId": "vehicle_gen_ecooltra",
+    "realTimeData": true,
+    "resourceType": "MOPED",
+    "companyZoneId": 473
+  },
+  {
+    "id": "PT-LIS-A00337",
+    "name": "04ZB75",
+    "x": -9.148176,
+    "y": 38.723697,
+    "licencePlate": "04ZB75",
+    "range": 61,
+    "batteryLevel": 81,
+    "helmets": 2,
+    "model": "Askoll",
+    "resourceImageId": "vehicle_gen_ecooltra",
+    "realTimeData": true,
+    "resourceType": "MOPED",
+    "companyZoneId": 473
+  }
+]

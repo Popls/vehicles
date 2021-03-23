@@ -1,0 +1,17 @@
+swagger: "2.0"
+info:
+  title: Vehicles API
+  description: API to control the vehicles data.
+  version: 1.0.0
+host: "localhost"
+schemes:
+  - https
+paths:
+  /status:
+    get:
+      summary: Returns OK is service is up
+      description: Returns OK is service is up
+      responses:
+        200:
+          description: OK
+
